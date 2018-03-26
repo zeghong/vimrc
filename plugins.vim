@@ -16,11 +16,13 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" Filesystem explorer
+Plugin 'scrooloose/nerdtree'
+
 " Keep Plugin commands between vundle#begin/end.
 " Provide support for expanding abbreviations similar to emmet
 "Plugin 'mattn/emmet-vim'
-" Filesystem explorer
-"Plugin 'scrooloose/nerdtree'
 " Python syntax and style checker
 "Plugin 'nvie/vim-flake8'  " flake8 needed
 " Generate the tags of the current file an get the structure of it
@@ -42,3 +44,16 @@ Plugin 'tomasr/molokai'
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Toggle NERDTree
+nmap <silent> <F4> :NERDTreeToggle<cr>
+" Close NERDTree if it's the last window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
