@@ -20,11 +20,13 @@ Plugin 'VundleVim/Vundle.vim'
 " Filesystem explorer
 Plugin 'scrooloose/nerdtree'
 
+" Python syntax and style checker
+" python package `flake8` is needed
+Plugin 'nvie/vim-flake8'
+
 " Keep Plugin commands between vundle#begin/end.
 " Provide support for expanding abbreviations similar to emmet
 "Plugin 'mattn/emmet-vim'
-" Python syntax and style checker
-"Plugin 'nvie/vim-flake8'  " flake8 needed
 " Generate the tags of the current file an get the structure of it
 "Plugin 'majutsushi/tagbar'  " exuberant-ctags needed
 " Visually display indent levels
