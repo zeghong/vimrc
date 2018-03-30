@@ -24,6 +24,9 @@ Plugin 'scrooloose/nerdtree'
 " python package `flake8` is needed
 Plugin 'nvie/vim-flake8'
 
+" Go support
+"Plugin 'fatih/vim-go'
+
 " Keep Plugin commands between vundle#begin/end.
 " Provide support for expanding abbreviations similar to emmet
 "Plugin 'mattn/emmet-vim'
@@ -40,6 +43,7 @@ Plugin 'nvie/vim-flake8'
 "Plugin 'digitaltoad/vim-pug'
 " Loading templates such as class, html, makefile and so on.
 "Plugin 'vim-scripts/load_template'
+
 " Molokai color scheme
 Plugin 'tomasr/molokai'
 
