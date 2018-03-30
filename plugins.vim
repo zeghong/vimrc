@@ -27,6 +27,9 @@ Plugin 'nvie/vim-flake8'
 " Go support
 "Plugin 'fatih/vim-go'
 
+" TOML support
+Plugin 'cespare/vim-toml'
+
 " Keep Plugin commands between vundle#begin/end.
 " Provide support for expanding abbreviations similar to emmet
 "Plugin 'mattn/emmet-vim'
