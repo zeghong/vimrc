@@ -25,7 +25,17 @@ autocmd BufRead,BufNewFile Dockerfile* setf dockerfile
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set different tab indent for html/css
 au FileType scss,xml,html,htmldjango setl sts=2 sw=2
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Python
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au FileType python inoremap <buffer> $r return
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Yaml
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set different tab indent for yaml
+au FileType yaml setl sts=2 sw=2
 
 
 " Example for not recognize filetype
