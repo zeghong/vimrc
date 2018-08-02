@@ -25,7 +25,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'nvie/vim-flake8'
 
 " Go support
-"Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 
 " TOML support
 Plugin 'cespare/vim-toml'
@@ -46,6 +46,11 @@ Plugin 'cespare/vim-toml'
 "Plugin 'digitaltoad/vim-pug'
 " Loading templates such as class, html, makefile and so on.
 "Plugin 'vim-scripts/load_template'
+" Enhanced status/tabline
+"Plugin 'vim-airline/vim-airline'
+"
+"Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
+"Plugin 'Blackrush/vim-gocode'
 
 " Molokai color scheme
 Plugin 'tomasr/molokai'

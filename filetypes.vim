@@ -12,13 +12,15 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Golang
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>gg :!go run *.go<cr>
-map <leader>gb :!go build<cr>
-
+map <leader>gg :GoRun<cr>
+map <leader>gb :GoBuild<cr>
+map <leader>gi :GoImport 
+au FileType go setl ts=4
+"au BufWritePost *.go !gofmt -w %
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Dockerfile
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd BufRead,BufNewFile Dockerfile* setf dockerfile
+au BufRead,BufNewFile Dockerfile* setf dockerfile
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML & CSS
