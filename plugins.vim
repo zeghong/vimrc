@@ -26,9 +26,8 @@ Plugin 'nvie/vim-flake8'
 
 " Go support
 Plugin 'fatih/vim-go'
-
-" TOML support
-Plugin 'cespare/vim-toml'
+" Vue support
+ Plugin 'posva/vim-vue'
 
 " Keep Plugin commands between vundle#begin/end.
 " Provide support for expanding abbreviations similar to emmet
@@ -39,9 +38,6 @@ Plugin 'cespare/vim-toml'
 "Plugin 'Yggdroot/indentLine'
 " Fuzzy file, buffer, mru, tag, etc finder
 "Plugin 'kien/ctrlp.vim'
-" Elixir support for vim
-"Plugin 'elixir-lang/vim-elixir'
-"Plugin 'nathanaelkane/vim-indent-guides'
 " Jade/Pug syntax highlighting
 "Plugin 'digitaltoad/vim-pug'
 " Loading templates such as class, html, makefile and so on.
