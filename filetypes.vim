@@ -25,8 +25,8 @@ au BufRead,BufNewFile Dockerfile* setf dockerfile
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => HTML & CSS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set different tab indent for html/css
-au FileType scss,xml,html,htmldjango setl sts=2 sw=2
+" Set different tab indent for html/css/javascript
+au FileType scss,xml,html,htmldjango,vue,javascript setl sts=2 sw=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python

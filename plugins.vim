@@ -16,6 +16,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+" Keep Plugin commands between vundle#begin/end.
 
 " Filesystem explorer
 Plugin 'scrooloose/nerdtree'
@@ -27,11 +28,10 @@ Plugin 'nvie/vim-flake8'
 " Go support
 Plugin 'fatih/vim-go'
 " Vue support
- Plugin 'posva/vim-vue'
+Plugin 'posva/vim-vue'
 
-" Keep Plugin commands between vundle#begin/end.
 " Provide support for expanding abbreviations similar to emmet
-"Plugin 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 " Generate the tags of the current file an get the structure of it
 "Plugin 'majutsushi/tagbar'  " exuberant-ctags needed
 " Visually display indent levels
