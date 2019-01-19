@@ -21,17 +21,23 @@ Plugin 'VundleVim/Vundle.vim'
 " Filesystem explorer
 Plugin 'scrooloose/nerdtree'
 
-" Python syntax and style checker
-" python package `flake8` is needed
-Plugin 'nvie/vim-flake8'
+" Syntax linting integration
+" dependencies:
+" python: `flake8`
+Plugin 'w0rp/ale'
+
+" Python support
+"Plugin 'nvie/vim-flake8'
 
 " Go support
 Plugin 'fatih/vim-go'
-" Vue support
-Plugin 'posva/vim-vue'
 
+" HTML/JS/CSS
+" vue syntax
+Plugin 'posva/vim-vue'
 " Provide support for expanding abbreviations similar to emmet
 Plugin 'mattn/emmet-vim'
+
 " Generate the tags of the current file an get the structure of it
 "Plugin 'majutsushi/tagbar'  " exuberant-ctags needed
 " Visually display indent levels
@@ -66,4 +72,3 @@ filetype plugin indent on    " required
 nmap <silent> <F4> :NERDTreeToggle<cr>
 " Close NERDTree if it's the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
