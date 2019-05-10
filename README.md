@@ -2,15 +2,16 @@
 
 vim configurations
 
-## Install
+## Installation
 
 ```sh
 $ git clone https://github.com/zeghong/vimrc.git
 ```
 
-Install Vundle 
+Install vim-plug
 
 ```sh
-$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-Then run `:VundleInstall` in vim to install all the plugins
+Then run `:PlugInstall` in vim to install all the plugins.
