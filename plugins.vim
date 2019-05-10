@@ -21,13 +21,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Filesystem explorer
 Plugin 'scrooloose/nerdtree'
 
-" Syntax linting integration
-" dependencies:
-" python: `flake8`
+" Syntax linting and formating integration
 Plugin 'w0rp/ale'
-
-" Python support
-"Plugin 'nvie/vim-flake8'
 
 " Go support
 Plugin 'fatih/vim-go'
@@ -64,6 +59,21 @@ filetype plugin indent on    " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ale
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" dependencies:
+" python:
+"   - `flake8`
+"       - `pyflakes': check syntax error
+"       - `pycodestyle`: check PEP8 (style conventions)
+"       - `mccabe`: check code complexity
+"   - `pydocstyle`: check PEP257 (docstring conventions)
+
+"let g:ale_linters = {
+"\   'python': ['flake8', 'pydocstyle'],
+"\}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
