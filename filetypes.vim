@@ -34,10 +34,10 @@ au FileType scss,xml,html,htmldjango,vue,javascript setl sts=2 sw=2
 au FileType python inoremap <buffer> $r return
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Yaml
+" => JSON & Yaml
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set different tab indent for yaml
-au FileType yaml setl sts=2 sw=2
+" Set different tab indent for json, yaml
+au FileType json,yaml setl sts=2 sw=2
 
 
 " Example for not recognize filetype
