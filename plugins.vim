@@ -14,7 +14,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 
 " Go support
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " HTML/JS/CSS
 " vue syntax
