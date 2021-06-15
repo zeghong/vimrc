@@ -92,7 +92,10 @@ syntax enable
 set t_Co=256
 
 " Color scheme
-colorscheme molokai
+try
+    colorscheme molokai
+catch
+endtry
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text formatting
