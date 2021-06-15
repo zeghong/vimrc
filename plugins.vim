@@ -13,14 +13,12 @@ Plug 'scrooloose/nerdtree'
 " Syntax linting and formating integration
 Plug 'w0rp/ale'
 
-" Go support
+" Go language support
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " HTML/JS/CSS
-" vue syntax
-Plug 'posva/vim-vue'
 " Provide support for expanding abbreviations similar to emmet
-Plug 'mattn/emmet-vim'
+"Plug 'mattn/emmet-vim'
 
 " Molokai color scheme
 Plug 'tomasr/molokai'
@@ -52,5 +50,6 @@ call plug#end()            " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle NERDTree
 nmap <silent> <F4> :NERDTreeToggle<cr>
+
 " Close NERDTree if it's the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
