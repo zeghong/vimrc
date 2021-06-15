@@ -49,14 +49,13 @@ autocmd BufEnter * silent! lcd %:p:h
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interfaces 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Minimal number of screen lines to keep above and below the cursor
 set so=10
 
 " Display line number
 set number
 
-"Always show current position
+" Always show current position
 set ruler
 
 " Ignore case when searching
@@ -84,6 +83,15 @@ set magic
 set showmatch 
 " How many tenths of a second to blink when matching brackets
 set mat=2
+
+" Turn on the Wild menu
+set wildmenu
+
+" Height of the command bar
+set cmdheight=1
+
+" Add a bit extra margin to the left
+"set foldcolumn=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and fonts
