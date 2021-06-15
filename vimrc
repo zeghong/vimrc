@@ -13,6 +13,9 @@ source ~/.vim/plugins.vim
 " Get out of VI's compatible mode
 " set nocompatible
 
+" Sets how many lines of history VIM has to remember
+set history=500
+
 " Enable filetype plugins & indent
 filetype plugin on
 filetype indent on
