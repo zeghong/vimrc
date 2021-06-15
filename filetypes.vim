@@ -14,6 +14,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>gg :GoRun<cr>
 map <leader>gb :GoBuild<cr>
+map <leader>gt :GoTest<cr>
 map <leader>gi :GoImport 
 au FileType go setl ts=4
 "au BufWritePost *.go !gofmt -w %
