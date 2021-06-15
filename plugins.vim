@@ -53,3 +53,6 @@ nmap <silent> <F4> :NERDTreeToggle<cr>
 
 " Close NERDTree if it's the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Set where NERDTree windows is placed on the screen
+let g:NERDTreeWinPos = 'right'
