@@ -93,20 +93,21 @@ set cmdheight=1
 " Add a bit extra margin to the left
 "set foldcolumn=1
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and fonts
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable syntax highlighting
-syntax enable 
 
-" Enable 256 colors palette
-set t_Co=256
+"""" Colors
 
-" Color scheme
-try
-    colorscheme molokai
-catch
-endtry
+syntax enable   " enable syntax highlighting
+set t_Co=256    " enable 256 colors palette
+
+" Color schemes
+"   - `onedark`: https://github.com/joshdick/onedark.vim
+"   - `molokai`: https://github.com/tomasr/molokai
+"
+" Installation of plugins is REQUIRED.
+" SUGGESTION: Install all color scheme plugins to path `~/.vim/pack/colors/opt/` as a Vim package.
+packadd! onedark.vim
+colorscheme onedark
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text formatting
