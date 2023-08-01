@@ -10,9 +10,6 @@ call plug#begin('~/.vim/plug')      " required
 " Filesystem explorer
 Plug 'scrooloose/nerdtree'
 
-" Syntax linting and formating integration
-Plug 'w0rp/ale'
-
 " Go language support
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
@@ -29,21 +26,6 @@ call plug#end()            " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ale
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" dependencies:
-" python:
-"   - `flake8`
-"       - `pyflakes': check syntax error
-"       - `pycodestyle`: check PEP8 (style conventions)
-"       - `mccabe`: check code complexity
-"   - `pydocstyle`: check PEP257 (docstring conventions)
-
-"let g:ale_linters = {
-"\   'python': ['flake8', 'pydocstyle'],
-"\}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
