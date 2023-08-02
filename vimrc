@@ -7,8 +7,8 @@
 
 """" General
 
-" Get out of VI's compatible mode
-" set nocompatible
+" Get out of Vi's compatible mode
+set nocompatible
 
 " Sets how many lines of history VIM has to remember
 set history=500
