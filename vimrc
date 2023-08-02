@@ -84,33 +84,13 @@ packadd! onedark.vim
 colorscheme onedark
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text formatting
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
-set expandtab
+"""" Text Formatting
 
-" Be smart when using tabs ;)
-set smarttab
-
-" 1 tab == 4 spaces
-set softtabstop=4
-set shiftwidth=4
-
-
-" Set utf8 as standard encoding
+" Set UTF-8 as standard encoding
 set encoding=utf-8
 
-" Use Unix as the standard file type
-set ffs=unix,dos,mac
-
-" Linebreak on 500 characters
-" set lbr
-"set tw=500
-"
-set ai      "Auto indent
-"set si      "Smart indent
-
+set smarttab    " be smart when using tabs
+set autoindent  " copy indent from current line when starting a new line
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
