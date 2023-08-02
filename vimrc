@@ -13,9 +13,8 @@ set nocompatible
 " Sets how many lines of history VIM has to remember
 set history=500
 
-" Enable filetype plugins & indent
-filetype plugin on
-filetype indent on
+" Enable filetype plugins & indent files
+filetype plugin indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
