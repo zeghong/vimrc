@@ -1,6 +1,6 @@
-" My personal vim configuration
+" My personal Vim configuration
 " Maintainer: Zeg
- 
+
 " Inspired by:
 "   - https://github.com/amix/vimrc
 
@@ -10,7 +10,7 @@
 " Get out of Vi's compatible mode
 set nocompatible
 
-" Sets how many lines of history VIM has to remember
+" Sets how many lines of history Vim has to remember
 set history=500
 
 " Enable filetype plugins & indent files
@@ -42,9 +42,8 @@ autocmd! bufwritepost ~/.vim/vimrc source ~/.vim/vimrc
 autocmd BufEnter * silent! lcd %:p:h
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interfaces 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""" User Interface
+
 " Minimal number of screen lines to keep above and below the cursor
 set so=10
 
