@@ -10,9 +10,6 @@ call plug#begin('~/.vim/plug')      " required
 " Filesystem explorer
 Plug 'scrooloose/nerdtree'
 
-" Go language support
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
 " HTML/JS/CSS
 " Provide support for expanding abbreviations similar to emmet
 "Plug 'mattn/emmet-vim'
