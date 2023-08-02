@@ -19,6 +19,9 @@ filetype plugin indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" Turn backup off
+set nobackup nowb noswapfile
+
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -108,13 +111,6 @@ set ffs=unix,dos,mac
 set ai      "Auto indent
 "set si      "Smart indent
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off
-set nobackup
-set nowb
-set noswapfile
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
