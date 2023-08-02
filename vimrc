@@ -47,46 +47,23 @@ autocmd BufEnter * silent! lcd %:p:h
 " Minimal number of screen lines to keep above and below the cursor
 set so=10
 
-" Display line number
-set number
+set number      " show line numbers
+set ruler       " show cursor position
+set wrap        " wrap long lines
+set showmatch   " highlight matching brackets
+set matchtime=2 " tenths of a second to show the matching paren
+set wildmenu    " visual completion match command-line
 
-" Always show current position
-set ruler
+" Redraw screen only when we need to
+set lazyredraw          
 
-" Ignore case when searching
-set ignorecase
-
-" When searching try to be smart about cases 
-set smartcase
-
-" Highlight search results
-set hlsearch
-
-" Close previous search highlighting 
-nmap <silent> <F2> :nohlsearch<cr>
-
-" Makes search act like search in modern browsers
-set incsearch 
-
-" Don't redraw while executing macros (good performance config)
-set lazyredraw
-
-" For regular expressions turn magic on
-set magic
-
-" Show matching brackets when text indicator is over them
-set showmatch 
-" How many tenths of a second to blink when matching brackets
-set mat=2
-
-" Turn on the Wild menu
-set wildmenu
-
-" Height of the command bar
-set cmdheight=1
-
-" Add a bit extra margin to the left
-"set foldcolumn=1
+" Search settings
+set ignorecase  " ignore case when searching
+set smartcase   " try to be smart about cases When searching
+set hlsearch    " highlight search results
+set incsearch   " search as characters typed
+" Turn off search highlighting with <CR>
+nnoremap <silent> <CR> :nohlsearch<CR><CR>
 
 
 """" Colors
@@ -130,7 +107,6 @@ set ffs=unix,dos,mac
 "
 set ai      "Auto indent
 "set si      "Smart indent
-set wrap    "Wrap lines
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
