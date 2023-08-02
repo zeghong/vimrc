@@ -14,9 +14,6 @@ Plug 'scrooloose/nerdtree'
 " Provide support for expanding abbreviations similar to emmet
 "Plug 'mattn/emmet-vim'
 
-" Molokai color scheme
-Plug 'tomasr/molokai'
-
 "" All of your Plugins must be added before the following line
 call plug#end()            " required
 
