@@ -23,23 +23,11 @@ set autoread
 set nobackup nowb noswapfile
 
 " With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
 let mapleader = ","
-"let g:mapleader = ","
-
-" Fast saving
-nmap <leader>w :w!<cr>
-
-" Fast quiting
-nmap <leader>q :q<cr>
 
 " Fast editing and reloading of vimrc configs
 nmap <leader>e :e! $MYVIMRC<cr>
 autocmd! bufwritepost ~/.vim/vimrc source ~/.vim/vimrc
-
-" :W sudo saves the file 
-" " (useful for handling the permission-denied error)
-"command W w !sudo tee % > /dev/null
 
 " Auto change current dir
 autocmd BufEnter * silent! lcd %:p:h
@@ -84,6 +72,15 @@ set t_Co=256    " enable 256 colors palette
 " SUGGESTION: Install all color scheme plugins to path `~/.vim/pack/colors/opt/` as a Vim package.
 packadd! onedark.vim
 colorscheme onedark
+
+
+"""" Editing
+
+" Fast quiting
+nmap <leader>q :q<cr>
+
+" Fast saving
+nmap <leader>w :w!<cr>
 
 
 """" Text Formatting
