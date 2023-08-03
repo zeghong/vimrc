@@ -93,12 +93,7 @@ set smarttab    " be smart when using tabs
 set autoindent  " copy indent from current line when starting a new line
 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Moving around, tabs, windows and buffers
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-"map <c-space> ?
+"""" Navigation
 
 " Smart way to move between windows
 map <C-j> <C-W>j
