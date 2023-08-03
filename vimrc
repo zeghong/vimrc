@@ -50,12 +50,14 @@ autocmd BufEnter * silent! lcd %:p:h
 " Minimal number of screen lines to keep above and below the cursor
 set so=10
 
-set number      " show line numbers
-set ruler       " show cursor position
-set wrap        " wrap long lines
-set showmatch   " highlight matching brackets
-set matchtime=2 " tenths of a second to show the matching paren
-set wildmenu    " visual completion match command-line
+set number        " show line numbers
+set ruler         " show cursor position
+set wrap          " wrap long lines
+set showmatch     " highlight matching brackets
+set matchtime=2   " tenths of a second to show the matching paren
+set wildmenu      " visual completion match command-line
+set laststatus=2  " always show statusline (even with only single window)
+
 
 " Redraw screen only when we need to
 set lazyredraw          
