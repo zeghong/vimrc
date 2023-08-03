@@ -97,11 +97,16 @@ set autoindent  " copy indent from current line when starting a new line
 
 """" Navigation
 
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+" Moving between windows
+noremap <C-J> <C-W>j
+noremap <C-K> <C-W>k
+noremap <C-H> <C-W>h
+noremap <C-L> <C-W>l
+
+" Spliting windows
+noremap <leader>s <C-W>s
+noremap <leader>v <C-W>v
+noremap <leader>n :new<space>
 
 " Useful mappings for managing tabs
 nnoremap <leader>t :tabnew<space>
