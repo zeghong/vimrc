@@ -103,14 +103,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Useful mappings for managing buffers
-map <leader>b :ls<cr>
-map <leader>d :bnext<cr>
-map <leader>p :bprevious<cr>
-
-" Close the current buffer
-map <leader>bd :bdelete<cr>
-
 " Useful mappings for managing tabs
 map <leader>t :tabnew<cr>
 map <leader>to :tabonly<cr>
