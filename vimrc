@@ -107,9 +107,3 @@ noremap <leader>n :new<space>
 
 " Useful mappings for managing tabs
 nnoremap <leader>t :tabnew<space>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Coding related
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source ~/.vim/filetypes.vim
