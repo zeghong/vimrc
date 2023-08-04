@@ -25,9 +25,9 @@ set nobackup nowb noswapfile
 " With a map leader it's possible to do extra key combinations
 let mapleader = ","
 
-" Fast editing and reloading of vimrc configs
-nmap <leader>e :e! $MYVIMRC<cr>
-autocmd! bufwritepost ~/.vim/vimrc source ~/.vim/vimrc
+" Fast editing of vimrc configuration file
+nmap <leader>e :e $MYVIMRC<CR>
+
 
 " Auto change current dir
 autocmd BufEnter * silent! lcd %:p:h
