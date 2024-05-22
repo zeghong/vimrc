@@ -31,7 +31,7 @@ set nobackup nowb noswapfile
 g:mapleader = ","
 
 # Fast editing of vimrc configuration file
-nmap <Leader>e :e $MYVIMRC<CR>
+nnoremap <Leader>ev :e $MYVIMRC<CR>
 
 # Auto change current dir
 autocmd BufEnter * silent! lcd %:p:h
