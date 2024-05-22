@@ -1,10 +1,11 @@
-# Vim configuration
-
+My personal Vim configuration
 
 ## Installation
 
+NOTE: Vim version 9.0 or above is REQUIRED.
+
 ```sh
-$ git clone https://github.com/zeghong/vimrc.git
+git clone https://github.com/zeghong/vimrc.git ~/.vim
 ```
 
 ## Plugins
