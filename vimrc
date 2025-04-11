@@ -70,7 +70,10 @@ nnoremap <silent> <CR> :nohlsearch<CR><CR>
 # ------------------------------------------------------------------------------
 
 syntax enable   # enable syntax highlighting
-set t_Co=256    # enable 256 colors palette
+# Use 24-bit (true-color) mode 
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 # Color scheme
 # NOTE: See https://github.com/joshdick/onedark.vim for installation guide
